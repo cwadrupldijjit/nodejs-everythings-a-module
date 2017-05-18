@@ -43,7 +43,7 @@ Next, create it.  You can do this in one of two ways:
     ```shell
     npm init
     ```
-    and follow the prompts.  If you want, you can just press <key>Enter</key> for each of the prompts.  If you don't want to press <key>Enter</key> that many times, you can use the `-y` flag to do the same thing:
+    and follow the prompts.  If you want, you can just press Enter for each of the prompts.  If you don't want to press Enter that many times, you can use the `-y` flag to do the same thing:
     ```shell
     npm init -y
     ```
@@ -108,4 +108,30 @@ If you really wanted to, you can technically write an entire application in the 
 When you're ready, type in:
 ```
 npm run example:3
+```
+
+### Executing code in a file
+In this example, I've supplied the code for you.  All you need to do is run it.
+
+Go to the example's folder from your terminal (`cd ./run-file`).  Inside of it, you'll find three JavaScript files (`multiply-numbers.js`, `pass-args.js`, and `create-guest-list.js`).  Each of these three files do very small things to show how it works.
+
+`multiply-numbers` accepts user input and only accepts numbers and the string "stop" to be entered in, and then gives you the answer to each of those numbers multiplied together.  When you type in "stop", it will give you the result and exit.  Otherwise, you can press Ctrl + C to cancel and exit.
+
+`create-guest-list.js` accepts user input as names you want to add to a guest list, and will continue to ask for names until you enter "stop".  Once you type in "stop", it asks what the name of the file you want to save it in is called, and then it will save the guest list into that file in the same directory.
+
+`pass-args.js` accepts arguments you pass into it from the command line (e.g. `./path/to/file`, `--something`, `-p123`).  It then prints those arguments out and closes.
+
+In order to execute any one of these files, type in:
+```bash
+node [filename.js|./path/to/filename.js]
+
+# like
+node multiply-numbers.js
+```
+
+If you want, you can create another file or two with valid JavaScript code, and run it in the same way.  You will be doing it in later examples, too.
+
+If you feel comfortable in executing files with Node, return to the root of this project (`cd ..`), and run:
+```bash
+npm run example:4
 ```
