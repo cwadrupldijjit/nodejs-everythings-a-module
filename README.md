@@ -103,7 +103,7 @@ Suggestions of what you can do are:
   * `var foo = 2` then `foo * 4`
   * `['x', 3, function() {console.log('bar')}]`
 
-If you really wanted to, you can technically write an entire application in the REPL.  But, since we're sane, it's best left to writing files that you can execute the files with.
+If you really wanted to, you can technically write an entire application in the REPL.  But, since we're sane, it's best left to writing files that you can execute code from.  The REPL is particularly useful if you want to test out a small snippet of code or as a simple playground.
 
 When you're ready, type in:
 ```
